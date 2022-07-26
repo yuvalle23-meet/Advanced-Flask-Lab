@@ -13,17 +13,17 @@
 
 				<!-- Header -->
 					<header id="header">
-						<span class="avatar"><img src="{{url_for('static',filename='images/avatar.jpg')}}" alt="" /></span>
+						<span class="avatar"><img src="{{imageli}}" alt="" /></span>
 
-            <h1>Description</h1>
+            <h1>{{bio}}</h1>
             <br>
             <!-- About me button -->
             <a href="#"><button style="color:white;width:40%" >More about me</button></a>
             <!--  -->
             <br> <br>
 						<ul class="icons">
-							<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://twitter.com/search?q=%23meet" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/MEET.entrepreneurs.of.tomorrow/" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
 							<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
 							<li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
 							<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
@@ -38,19 +38,19 @@
                 
                 <div>
                       <a href="">
-                        <img src="static/images/thumbs/01.jpg" alt="" />
-                        <h3>Caption... blah blah blah</h3>
+                        <img src="{{poslist[0]}}" alt="" />
+                        <h3>{{desclist[0]}}</h3>
                       </a>
                 
                       <a href="">
-                        <img src="url_for('static',filename='images/thumbs/02.jpg')" alt="" />
-                        <h3>Caption... blah blah blah</h3>
+                        <img src="{{poslist[1]}}" alt="" />
+                        <h3>{{desclist[1]}}</h3>
                       </a>
                 </div>    
                 <div>
                   <a href="">
-                        <img src="{{url_for('static',filename='images/thumbs/03.jpg')}}" alt="" />
-                        <h3>Caption... blah blah blah</h3>
+                        <img src="{{poslist[2]}}" alt="" />
+                        <h3>{{desclist[2]}}</h3>
                       </a>
                 </div>  
 
